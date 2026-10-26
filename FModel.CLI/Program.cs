@@ -13,7 +13,7 @@ usage: FModel.CLI <command> [patterns...] --game <Paks folder> [options]
 commands:
   info                    mount summary and every archive (mounted, encrypted, key GUID, files)
   list [patterns]         every file: path, size, archive; --exports adds export name / class per package
-  json <patterns>         package properties as .json (FModel's "Save Properties"); --stdout for one package
+  json <patterns>         package properties as .json (FModel's "Save Properties"); --stdout for one package, --script adds blueprint bytecode
   export <patterns>       exports by --kind (default assets = mesh, anim, texture, sound)
   refs <patterns>         packages that reference the given ones
 

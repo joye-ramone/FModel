@@ -9,7 +9,7 @@ public sealed class CliOptions
 {
     private static readonly HashSet<string> _flags = new(StringComparer.OrdinalIgnoreCase)
     {
-        "help", "verbose", "all", "exports", "no-materials", "no-morphs", "all-mips", "hdr-as-png", "regex", "strict", "raw-sound", "stdout"
+        "help", "verbose", "all", "exports", "no-materials", "no-morphs", "all-mips", "hdr-as-png", "regex", "strict", "raw-sound", "stdout", "script"
     };
 
     private static readonly HashSet<string> _values = new(StringComparer.OrdinalIgnoreCase)

@@ -46,7 +46,7 @@ public sealed class GameSession : IDisposable
 
         var versions = new VersionContainer(game, platform);
         var provider = new DefaultFileProvider(gameDirectory, SearchOption.AllDirectories, versions, StringComparer.OrdinalIgnoreCase);
-        provider.ReadScriptData = false;
+        provider.ReadScriptData = o.Has("script");   // blueprint function bytecode (Kismet expressions) in json output
         provider.ReadShaderMaps = false;
         provider.ReadNaniteData = true;
         PropertyUtil.SearchPropertyInTemplate = true;
